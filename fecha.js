@@ -5,7 +5,7 @@ class Fecha{
 			this.month = month;
 			this.year = year; 
 		}else{
-			console.log("fecha no es valida")
+			alert('La fecha no es valida')
 		}
 		
 	}
@@ -36,9 +36,9 @@ class Fecha{
 
     leapYear(){
     	if ((((this.year%100)!=0)&&((this.year%4)==0))||((this.year%400)==0)){
-		 	console.log("El año es biciesto")
+		 	alert('el año es biciesto')
 		}else {
-			console.log("El año no es biciesto")
+			alert('el año no es biciesto')
 		}
     }
 
@@ -55,11 +55,11 @@ class Fecha{
     }
 
     printLat(){
-    	console.log(`La fecha en latino es ${this.day}/${this.month}/${this.year}`)
+    	alert(`La fecha en latino es ${this.day}/${this.month}/${this.year}`)
     }
 
     printUSA(){
-    	console.log(`La fecha en latino es ${this.month}/${this.day}/${this.year}`)
+    	alert(`La fecha en latino es ${this.month}/${this.day}/${this.year}`)
     }
 
 

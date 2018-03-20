@@ -2,10 +2,42 @@
 <html>
 <head>
 	<title>Clase Fecha</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
 </head>
 <body>
+	<p>var nombreDelObjeto = new Fecha('dia','mes','año')</p>
 
+	<form id="crearFechaForm">
+	<div class="row">
+        <div class="input-field col s4">
+          <input name="diaInput" placeholder="Ingrese el dia" id="day" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <input name="mesInput" placeholder="Ingrese el mes" id="month" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <input name="anioInput" placeholder="Ingrese el anio" id="year" type="text" class="validate">
+        </div>
+      </div>
+      <button type="submit" class="waves-effect waves-light btn">Crear Fecha</button>
+      </form>
 
+      <br>
+      <br>
+      <br>
+      <button id="biciesto" class="waves-effect waves-light btn">Validar Biciesto</button>
+      <button id="getFecha" class="waves-effect waves-light btn">Adquirir fecha</button>
+      <button id="getDia" class="waves-effect waves-light btn">Adquirir dia</button>
+      <button id="getMes" class="waves-effect waves-light btn">Adquirir mes</button>
+      <button id="getAnio" class="waves-effect waves-light btn">Adquirir anio</button>
+      <button id="printLatino" class="waves-effect waves-light btn">Imprimir en latino</button>
+      <button id="printGringo" class="waves-effect waves-light btn">Imprimir en gringo</button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="./fecha.js" type="text/javascript"></script>
+	<script src="./check.js" type="text/javascript"></script>
 </body>
 </html>
