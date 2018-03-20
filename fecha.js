@@ -54,5 +54,13 @@ class Fecha{
         return m > 0 && m < 13 && y > 0 && y < 32768 && d > 0 && d <= (new Date(y, m, 0)).getDate();
     }
 
+    printLat(){
+    	console.log(`La fecha en latino es ${this.day}/${this.month}/${this.year}`)
+    }
+
+    printUSA(){
+    	console.log(`La fecha en latino es ${this.month}/${this.day}/${this.year}`)
+    }
+
 
 }
