@@ -18,7 +18,11 @@ class Fecha{
     }
 
     leapYear(){
-
+    	if ((((this.year%100)!=0)&&((this.year%4)==0))||((this.year%400)==0)){
+		 	console.log("El año es biciesto")
+		}else {
+			console.log("El año no es biciesto")
+		}
     }
 
     plus7Days(){
@@ -26,7 +30,7 @@ class Fecha{
     }
 
     validateDate(){
-    	
+
     }
 
 
